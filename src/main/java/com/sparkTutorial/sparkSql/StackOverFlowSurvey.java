@@ -38,10 +38,10 @@ public class StackOverFlowSurvey {
         df.show();
         df.write()
             .format("com.microsoft.sqlserver.jdbc.spark")
-            .option("url","jdbc:sqlserver://172.18.250.114:1433;databaseName=DBA")
+            .option("url","jdbc:sqlserver://xxxxxx:1433;databaseName=DBA")
             .option("dbtable", "dbo.aa11")
-            .option("user", "ogun")
-            .option("password", "24101991")
+            .option("user", "")
+            .option("password", "")
             .mode(SaveMode.Overwrite)
             .save();
 
